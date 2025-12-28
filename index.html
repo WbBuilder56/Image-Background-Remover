@@ -14,40 +14,54 @@
     <div
       class="container mt-2 d-flex flex-column align-items-center text-center overflow-x-hidden"
     >
-      <h3 class="text-center m-0 text-warning">Image Background Remover</h3>
-      <p class="text-secondary">Drag & Drop or Upload an image</p>
+      <h2
+        class="header text-center m-1 fw-bold"
+        style="color: rgb(250, 66, 235)"
+      >
+        Image Background Remover
+      </h2>
+      <p class="text-white mt-0 mb-3">Drag & Drop or Upload an image</p>
       <input
         type="file"
         name="image"
         id="imageinput"
-        class="mb-3 form-control w-auto border border-secondary"
+        class="mb-4 form-control w-auto border border-secondary"
       />
-      <div class="images-section row d-flex justify-content-center gap-2">
+      <div class="images-section row d-flex justify-content-center gap-5">
         <div
-          class="input-img col col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center border border-secondary"
+          class="input-img col col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded"
           style="height: 300px; width: 250px"
         >
           <img
             id="original-image"
             src=""
-            alt="Original image"
-            style="max-width: 100%; max-height: 100%; object-fit: fill"
+            alt=""
+            style="max-width: 100%; max-height: 100%; object-fit: cover"
           />
         </div>
         <div
-          class="output-img col col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center border border-secondary"
+          class="output-img col col-12 col-md-6 col-lg-4 d-flex justify-content-center align-items-center rounded"
           style="height: 300px; width: 250px"
         >
           <img
             id="processed-image"
             src=""
-            alt="Final image"
-            style="max-width: 110%; max-height: 100%; object-fit: contain"
+            alt=""
+            style="max-width: 100%; max-height: 100%; object-fit: cover"
           />
         </div>
       </div>
-      <button class="remove-bg-btn btn btn-warning m-3">
+      <button
+        class="remove-bg-btn btn m-5 p-2"
+        style="background-color: rgb(241, 52, 241); color: white"
+      >
         Remove Background
+      </button>
+      <button
+        class="download-btn btn m-5 p-2"
+        style="background-color: rgb(241, 52, 241); color: white"
+      >
+        Download Image
       </button>
     </div>
     <script src="script.js"></script>
